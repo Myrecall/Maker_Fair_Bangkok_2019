@@ -1,0 +1,22 @@
+{
+  "name": "maker_fair_bangkok_2019",
+  "version": "1.0.0",
+  "description": "Maker_Fair_Bangkok_2019",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myrecall/Maker_Fair_Bangkok_2019.git"
+  },
+  "author": "Nu Chaimongkon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myrecall/Maker_Fair_Bangkok_2019/issues"
+  },
+  "homepage": "https://github.com/Myrecall/Maker_Fair_Bangkok_2019#readme",
+  "dependencies": {
+    "mdbootstrap": "^4.6.0"
+  }
+}
