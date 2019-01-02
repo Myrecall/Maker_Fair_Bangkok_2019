@@ -177,7 +177,8 @@ select.select-sex-age::-ms-expand {
   display: none !important;
 }
 
-.custom-control-input:checked ~ .custom-control-label.custom-mfb-radio::before {
+.custom-control-input:checked ~ .custom-control-label.custom-mfb-radio::before ,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
   color: #fff;
   background-color: #ed1c24;
 }
@@ -254,6 +255,15 @@ footer {
   font-size: 14px;
   font-style: italic;
   text-align: right;
+}
+.btn-take{
+  background-color: #0068b3;
+  position: absolute;
+  right: 0;
+  z-index: 900;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 @media screen and (min-width: 1000px) {
   .owl-stage {
