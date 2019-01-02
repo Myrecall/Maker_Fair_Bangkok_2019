@@ -8,14 +8,72 @@ body.bg_index {
   background-position: top center;
   background-repeat: no-repeat;
 }
+body.bg_schedule {
+  background-image: url("../images/bg_schedule.png");
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
+
+.icon-hamberger {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+}
 .header-index {
   background-image: url("../images/bg_header_index.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #020641;
+  /*background-color: #020641;*/
   height: 100vh;
+}
+.header-schedule {
+  width: 100%;
+  height: 10rem;
+}
+.header-menu-schedule{
+  margin-top: 10rem;
+}
+.breadcrumb.breadcrumb-mfb{
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.breadcrumb.breadcrumb-mfb .breadcrumb-item{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.breadcrumb.breadcrumb-mfb .breadcrumb-item+.breadcrumb-item::before{
+  content: '>';
+  color: #fff;
+}
+.bg-date{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2.5rem;
+  background-image: url('../images/bg-date.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.card-scedule{
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.time-scedule{
+  color: #ed1c24;
+}
+.title-detail-scedule{
+  color: #0068b3;
+}
+.detail-scedule{
+  text-indent: 2rem;
+  margin-bottom: 0;
+}
+.div-detail-right-scedule{
+  border-left: 1px solid #000;
 }
 
 .contain-logo-index {
@@ -84,7 +142,7 @@ body.bg_index {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.modal-login-left {
+.modal-login-right {
   border-left: 2px solid #fff;
 }
 .custom-input-reg {
@@ -119,20 +177,97 @@ select.select-sex-age::-ms-expand {
   display: none !important;
 }
 
-.custom-control-input:checked~.custom-control-label.custom-mfb-radio::before{
+.custom-control-input:checked ~ .custom-control-label.custom-mfb-radio::before {
   color: #fff;
   background-color: #ed1c24;
 }
-.custom-radio .custom-control-label.custom-mfb-radio::before, .custom-radio .custom-control-label.custom-mfb-radio::after{
+.custom-radio .custom-control-label.custom-mfb-radio::before,
+.custom-radio .custom-control-label.custom-mfb-radio::after {
   border-radius: 4px;
 }
+.linknav {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  padding: 0.5rem 1rem;
+}
+.linknav {
+  border-left: 1px solid #ed1c24;
+  border-right: 1px solid #ed1c24;
+}
+.linknav:first-of-type {
+  border-left: none;
+}
+.linknav:last-of-type {
+  border-right: none;
+}
+.linknav:hover {
+  color: #fff;
+  background-color: #ed1c24;
+}
+.linknav.active {
+  background-color: #ed1c24;
+  color: #fff;
+}
+.dropdown-menu.dropdown-mfb {
+  min-width: 300px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dropdown-menu.dropdown-mfb .dropdown-item {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.dropdown-menu.dropdown-mfb .dropdown-item:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+footer {
+  background-color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.icon-footer {
+  width: auto;
+  min-width: 85px;
+  max-width: 185px;
+  height: 80px;
+}
+@media screen and (min-width: 1000px) {
+  .owl-stage {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 768px) {
+  .navbar-collapse.custom-nav-collapse{
+    padding: 1rem 3rem;
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 10px;
+  }
+  .navbar-collapse.custom-nav-collapse .navbar-nav .nav-item a.nav-link{
+    color: #000;
+  }
+  .img-logo{
+    width: 80%;
+    margin-top: -20px
+  }
   .header-index {
     background-image: url("../images/bg_header_index.png");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-color: #020641;
+    /*background-color: #020641;*/
     height: 100vh;
   }
   .modal-login-right {
@@ -157,6 +292,17 @@ select.select-sex-age::-ms-expand {
 }
 
 @media screen and (max-width: 515px) {
+  body.bg_schedule {
+    background-image: url("../images/bg_schedule.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .div-detail-right-scedule{
+    border-left: none;
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+  }
   .img-we-are-all-maker {
     width: 90%;
     max-width: 838px;

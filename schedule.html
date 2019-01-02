@@ -38,167 +38,148 @@
     <link href="./css/css.css" rel="stylesheet" />
   </head>
 
-  <body class="bg_index">
-    <div class="header-index">
+  <body class="bg_schedule">
+    <div class="header-schedule">
       <div class="container-fluid">
-        <div class="contain-logo-index">
-          <div class="row m-0">
-            <div class="col-12 col-md-6 text-center text-md-left">
-              <div class="header-logo-index">
-                <a href="index.html">
-                  <img
-                    src="./images/img-logo.png"
-                    class="img-logo wow fadeInLeft"
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end"
-            >
-            <!--เข้าสู่ระบบแล้ว-->
-              <!--<div class="btn-group">                
-                <button
-                  class="btn btn-login dropdown-toggle"
-                  type="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-user-alt mr-2"></i> Anucha
-                </button>
-
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">เผื่อมี</a>
-                  <a class="dropdown-item" href="#">เผื่อมี</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">ออกจากระบบ</a>
+        <div class="row">
+          <div class="col-12">
+            <div class="contain-logo-index">
+              <div class="row m-0">
+                <div class="col-12 col-md-6 text-center text-md-left">
+                  <div class="header-logo-index">
+                    <a href="index.html">
+                      <img
+                        src="./images/img-logo.png"
+                        class="img-logo wow fadeInLeft"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>-->
-            <!--เข้าสู่ระบบแล้ว-->
-              <button
-                class="btn btn-login d-inline-flex wow fadeInRight"
-                data-toggle="modal"
-                data-target="#loginModal"
-              >
-                <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
-              </button>
-              <div class="div-lang d-inline-flex wow fadeInRight">
-                <select class="select-lang">
-                  <option selected value="1">TH</option>
-                  <option value="2">EN</option>
-                </select>
+                <div
+                  class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end"
+                >
+                  <!--เข้าสู่ระบบแล้ว-->
+                  <!--<div class="btn-group">                
+                                <button
+                                  class="btn btn-login dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  <i class="fas fa-user-alt mr-2"></i> Anucha
+                                </button>
+                
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                                </div>
+                              </div>-->
+                  <!--เข้าสู่ระบบแล้ว-->
+                  <button
+                    class="btn btn-login d-inline-flex wow fadeInRight"
+                    data-toggle="modal"
+                    data-target="#loginModal"
+                  >
+                    <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
+                  </button>
+                  <div class="div-lang d-inline-flex wow fadeInRight">
+                    <select class="select-lang">
+                      <option selected value="1">TH</option>
+                      <option value="2">EN</option>
+                    </select>
+                  </div>
+                  <button
+                    class="navbar-toggler d-block d-lg-none"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#menu_mobile"
+                    aria-controls="menu_mobile"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon icon-hamberger"></span>
+                  </button>
+                </div>
               </div>
-              <button
-                class="navbar-toggler d-block d-lg-none"
-                type="button"
-                data-toggle="collapse"
-                data-target="#menu_mobile"
-                aria-controls="menu_mobile"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon icon-hamberger"></span>
-              </button>
+              <div class="row">
+                <div
+                  class="collapse navbar-collapse custom-nav-collapse"
+                  id="menu_mobile"
+                >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >ข้อมูลจัดงาน</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#">ข้อมูลงาน</a>
+                        <a class="dropdown-item" href="#">เวทีหลัก</a>
+                        <a class="dropdown-item" href="#">ลานกิจกรรม</a>
+                        <a class="dropdown-item" href="#">ข่าวสาร</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >เวิร์คช็อป</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#"
+                          >ตารางและข้อมูลกิจกรรม</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Link สมัครร่วมเวิร์คช็อป</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">แบบสอบถาม</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Young Maker Contest Year 3</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >ติดต่อเรา</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#">แผนที่การเดินทาง</a>
+                        <a class="dropdown-item" href="#">การจอดรถ</a>
+                        <a class="dropdown-item" href="#">ติดต่อเรา</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div
-              class="collapse navbar-collapse custom-nav-collapse"
-              id="menu_mobile"
-            >
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >ข้อมูลจัดงาน</a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-primary"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <a class="dropdown-item" href="#">ข้อมูลงาน</a>
-                    <a class="dropdown-item" href="#">เวทีหลัก</a>
-                    <a class="dropdown-item" href="#">ลานกิจกรรม</a>
-                    <a class="dropdown-item" href="#">ข่าวสาร</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >เวิร์คช็อป</a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-primary"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <a class="dropdown-item" href="#">ตารางและข้อมูลกิจกรรม</a>
-                    <a class="dropdown-item" href="#"
-                      >Link สมัครร่วมเวิร์คช็อป</a
-                    >
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">แบบสอบถาม</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Young Maker Contest Year 3</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >ติดต่อเรา</a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-primary"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <a class="dropdown-item" href="#">แผนที่การเดินทาง</a>
-                    <a class="dropdown-item" href="#">การจอดรถ</a>
-                    <a class="dropdown-item" href="#">ติดต่อเรา</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-header flex-center flex-column">
-        <img
-          src="./images/we_are_all_maker.png"
-          class="img-we-are-all-maker wow bounceInDown"
-        />
-        <div class="row mx-0">
-          <div class="col-12 col-md-6 text-center my-3">
-            <a>
-              <img
-                src="./images/btn-live.png"
-                class="btn-live-facebook wow fadeIn"
-              />
-            </a>
-          </div>
-          <div class="col-12 col-md-6 text-center my-3">
-            <a
-              href="https://www.facebook.com/makerfairebangkok/"
-              target="_blank"
-            >
-              <img
-                src="./images/btn-facebook.png"
-                class="btn-live-facebook wow fadeIn"
-              />
-            </a>
           </div>
         </div>
       </div>
@@ -270,11 +251,90 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-12 py-5">
-            <img
-              src="./images/mascoz.png"
-              class="img-fluid w-100 wow bounceInUp"
-            />
+          <div class="col-12 py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-mfb wow fadeInLeft">
+                <li class="breadcrumb-item">เวิร์คช็อป</li>
+                <li class="breadcrumb-item active">
+                  ตารางเวลาและข้อมูลกิจกรรม
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-12 py-3 text-center">
+            <h4 class="white-text wow fadeIn">ตารางเวลาและข้อมูลกิจกรรม</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 bg-date wow bounceInUp">
+                <h4 class="white-text mb-0">วันที่ 18 มกราคม 2562</h4>
+              </div>
+            </div>
+            <div class="row my-2 card-scedule wow bounceInUp">
+              <div
+                class="col-12 col-md-4 col-lg-3 d-flex align-content-center justify-content-center align-items-center"
+              >
+                <h4 class="time-scedule">08:00 - 09:00</h4>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9 div-detail-right-scedule">
+                <h5 class="title-detail-scedule">รายละเอียด</h5>
+                <p class="detail-scedule">
+                  schedule (something) to take place at a particular time.German
+                  lessons were timetabled on Wednesday and Friday
+                </p>
+              </div>
+            </div>
+            <div class="row my-2 card-scedule wow bounceInUp">
+              <div
+                class="col-12 col-md-4 col-lg-3 d-flex align-content-center justify-content-center align-items-center"
+              >
+                <h4 class="time-scedule">08:00 - 09:00</h4>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9 div-detail-right-scedule">
+                <h5 class="title-detail-scedule">รายละเอียด</h5>
+                <p class="detail-scedule">
+                  schedule (something) to take place at a particular time.German
+                  lessons were timetabled on Wednesday and Friday
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-4">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 bg-date wow bounceInUp">
+                <h4 class="white-text mb-0">วันที่ 18 มกราคม 2562</h4>
+              </div>
+            </div>
+            <div class="row my-2 card-scedule wow bounceInUp">
+              <div
+                class="col-12 col-md-4 col-lg-3 d-flex align-content-center justify-content-center align-items-center"
+              >
+                <h4 class="time-scedule">08:00 - 09:00</h4>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9 div-detail-right-scedule">
+                <h5 class="title-detail-scedule">รายละเอียด</h5>
+                <p class="detail-scedule">
+                  schedule (something) to take place at a particular time.German
+                  lessons were timetabled on Wednesday and Friday
+                </p>
+              </div>
+            </div>
+            <div class="row my-2 card-scedule wow bounceInUp">
+              <div
+                class="col-12 col-md-4 col-lg-3 d-flex align-content-center justify-content-center align-items-center"
+              >
+                <h4 class="time-scedule">08:00 - 09:00</h4>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9 div-detail-right-scedule">
+                <h5 class="title-detail-scedule">รายละเอียด</h5>
+                <p class="detail-scedule">
+                  schedule (something) to take place at a particular time.German
+                  lessons were timetabled on Wednesday and Friday
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
