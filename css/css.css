@@ -373,6 +373,17 @@ footer {
 .bg-vote{
   background-color: #0068b3;
 }
+.card-map{
+  height: 600px;
+}
+.title-map{
+  font-size: 1rem;
+  color: #0068b3;
+}
+.sub-map{
+  font-size: 1rem;
+  color: #000;
+}
 @media screen and (min-width: 1000px) {
   .owl-stage {
     margin: 0 auto;
@@ -448,6 +459,9 @@ footer {
     background-color: #fff;
     z-index: 999;
     border-radius: 10px;
+  }
+  .card-map{
+    height: 400px;
   }
   .navbar-collapse.custom-nav-collapse .navbar-nav .nav-item a.nav-link {
     color: #000;
