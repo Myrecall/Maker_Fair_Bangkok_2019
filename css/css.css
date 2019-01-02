@@ -327,6 +327,12 @@ footer {
 .carousel-indicators .active {
   background-color: #ed1c24;
 }
+.btn-like{
+  background-color: #ed1c24;
+}
+.btn-vote{
+  background-color: #0068b3;
+}
 .views-detail-news {
   position: absolute;
   right: 15px;
