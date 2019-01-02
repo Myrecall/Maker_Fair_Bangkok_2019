@@ -1,44 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Maker Fair Bangkok 2019</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="./node_modules/mdbootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link href="./node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet" />
+    <!--Google Fonts Kanit-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Your custom styles (optional) -->
+    <link href="./css/css.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="./node_modules/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="./node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="./css/css.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Start your project here-->
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-
-      <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-
-      <p class="animated fadeIn text-muted">MDB Team</p>
+  <body class="bg_index">
+    <div class="header-index">
+      <div class="container-fluid">
+        <div class="contain-logo-index">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 text-center text-md-left">
+              <div class="header-logo-index">
+                <a href="index.html">
+                  <img
+                    src="./images/img-logo.png"
+                    class="img-logo wow fadeInLeft"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end"
+            >
+              <button
+                class="btn btn-login d-inline-flex wow fadeInRight"
+                data-toggle="modal"
+                data-target="#loginModal"
+              >
+                <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
+              </button>
+              <div class="div-lang d-inline-flex wow fadeInRight">
+                <select class="select-lang">
+                  <option selected value="1">TH</option>
+                  <option value="2">EN</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-header flex-center flex-column">
+        <img
+          src="./images/we_are_all_maker.png"
+          class="img-we-are-all-maker wow bounceInDown"
+        />
+        <div class="row mx-0">
+          <div class="col-12 col-md-6 text-center my-3">
+            <a>
+              <img
+                src="./images/btn-live.png"
+                class="btn-live-facebook wow fadeIn"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-md-6 text-center my-3">
+            <a
+              href="https://www.facebook.com/makerfairebangkok/"
+              target="_blank"
+            >
+              <img
+                src="./images/btn-facebook.png"
+                class="btn-live-facebook wow fadeIn"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- /Start your project here-->
+    <header>ss</header>
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
-</body>
+    <!--Modal Login-->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background-color: transparent;">
+          <div class="modal-body bg-modal-login">
+            <div class="row">
+              <div
+                class="col-12 col-lg-6 d-flex align-content-center align-self-center justify-content-center py-2"
+              >
+                <div class="row">
+                  <div class="col-12 mb-3 text-center">
+                    <h5 class="text-white">เข้าสู่ระบบ</h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อีเมล"
+                        aria-label="อีเมล"
+                        aria-describedby="email-login"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="email-login"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="รหัสผ่าน"
+                        aria-label="รหัสผ่าน"
+                        aria-describedby="pass-login"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-login"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#!"> <p class="p-forgotpass">ลืมรหัสผ่าน</p> </a>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-login-modal btn-block">เข้าสู่ระบบ</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-6 d-flex align-content-center align-self-center justify-content-center py-2 modal-login-left"
+              >
+                <div class="row">
+                  <div class="col-12 mb-3 text-center">
+                    <h5 class="text-white">สมัครสมาชิก</h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อีเมล"
+                        aria-label="อีเมล"
+                        aria-describedby="email-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="email-reg"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="รหัสผ่าน"
+                        aria-label="รหัสผ่าน"
+                        aria-describedby="pass-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="ยืนยันรหัสผ่าน"
+                        aria-label="ยืนยันรหัสผ่าน"
+                        aria-describedby="pass-reg2"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg2"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <select class="form-control select-sex-age">
+                      <option selected disabled>เพศ</option>
+                      <option value="1">ชาย</option>
+                      <option value="2">หญิง</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อายุ"
+                        aria-label="อายุ"
+                        aria-describedby="pass-reg2"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg2"
+                          ><i class="far fa-calendar-check"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ1"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ1"
+                        >นักเรียน</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ2"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ2"
+                        >นักศึกษา</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ3"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ3"
+                        >ข้าราชการ/รัฐวิสาหกิจ</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ4"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ4"
+                        >ธุรกิจส่วนตัว</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ5"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ5"
+                        >พนักงานบริษัท</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ6"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ6"
+                        >อื่นๆ</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="เบอร์โทรศัพท์"
+                        aria-label="เบอร์โทรศัพท์"
+                        aria-describedby="pass-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg"
+                          ><i class="fas fa-mobile-alt"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="acc-pic1"
+                        name="accpect-pic"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="acc-pic1"
+                        >ยอมรับการเผยแพร่ภาพ</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-login-modal btn-block">สมัครสมาชิก</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Modal Login-->
+    <!-- /Start your project here-->
 
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/mdb.min.js"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
