@@ -43,13 +43,58 @@
   </head>
 
   <body class="bg_index">
-    <div class="header-index header-index-for-mobile">
-      <div class="container-fluid menu-mobile-fixed">
-        <div class="contain-logo-index d-block d-lg-none">
+    <div class="header-index">
+      <div class="container-fluid">
+        <div class="contain-logo-index">
           <div class="row m-0">
-            <div class="col-12 col-md-12 text-right">
+            <div class="col-12 col-md-6 text-center text-md-left">
+              <div class="header-logo-index">
+                <a href="index.html">
+                  <img
+                    src="./images/img-logo.png"
+                    class="img-logo wow fadeInLeft"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end"
+            >
+              <!--เข้าสู่ระบบแล้ว-->
+              <!--<div class="btn-group">                
+                <button
+                  class="btn btn-login dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user-alt mr-2"></i> Anucha
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                </div>
+              </div>-->
+              <!--เข้าสู่ระบบแล้ว-->
               <button
-                class="navbar-toggler"
+                class="btn btn-login d-inline-flex wow fadeInRight"
+                data-toggle="modal"
+                data-target="#loginModal"
+              >
+                <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
+              </button>
+              <div class="div-lang d-inline-flex wow fadeInRight">
+                <select class="select-lang">
+                  <option selected value="1">TH</option>
+                  <option value="2">EN</option>
+                </select>
+              </div>
+              <button
+                class="navbar-toggler d-block d-lg-none"
                 type="button"
                 data-toggle="collapse"
                 data-target="#menu_mobile"
@@ -134,14 +179,7 @@
           </div>
         </div>
       </div>
-      <div class="div-robot-left">
-        <img src="./images/robot-left.png" class="img-fluid wow bounceInLeft">
-      </div>
-      <div class="div-robot-right">
-          <img src="./images/robot-right.png" class="img-fluid wow bounceInRight">
-        </div>
       <div class="content-header flex-center flex-column">
-        <img src="./images/newLogo_index.png" class="new-logo-index wow bounceInDown" />
         <img
           src="./images/we_are_all_maker.png"
           class="img-we-are-all-maker wow bounceInDown"
@@ -168,67 +206,6 @@
           </div>
         </div>
       </div>
-      <div class="contain-menu">
-        <!--เข้าสู่ระบบแล้ว-->
-        <!--<div class="btn-group">                
-                <button
-                  class="btn btn-login dropdown-toggle"
-                  type="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-user-alt mr-2"></i> Anucha
-                </button>
-
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">เผื่อมี</a>
-                  <a class="dropdown-item" href="#">เผื่อมี</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">ออกจากระบบ</a>
-                </div>
-              </div>-->
-        <!--เข้าสู่ระบบแล้ว-->
-        <button
-          class="btn btn-login d-inline-flex wow fadeInRight"
-          data-toggle="modal"
-          data-target="#loginModal"
-        >
-          <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
-        </button>
-        <div class="div-lang d-inline-flex wow fadeInRight">
-          <select class="select-lang">
-            <option selected value="1">TH</option>
-            <option value="2">EN</option>
-          </select>
-        </div>
-      </div>
-      <footer class="footer-index d-block d-lg-none">
-        <div class="container">
-          <div class="row">
-            <!--<div class="col-12 col-lg-2 text-center d-flex justify-content-center align-content-center align-items-center">
-                <h5>Presented by</h5>
-              </div>-->
-            <div class="col-12 col-lg-12">
-              <div class="owl-carousel">
-                <div>
-                  <img src="./images/chevron.png" class="icon-footer" />
-                </div>
-                <div><img src="./images/enjoy.png" class="icon-footer" /></div>
-                <div><img src="./images/nstda.png" class="icon-footer" /></div>
-                <div><img src="./images/nsm.png" class="icon-footer" /></div>
-                <div>
-                  <img src="./images/footer_logo.png" class="icon-footer" />
-                </div>
-                <div><img src="./images/kenan.png" class="icon-footer" /></div>
-                <div>
-                  <img src="./images/makezine.png" class="icon-footer" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     <header id="myHeader" class="d-none d-lg-block">
       <div class="container">
@@ -306,12 +283,12 @@
         </div>
       </div>
     </main>
-    <footer class="d-none d-lg-block">
+    <footer>
       <div class="container">
         <div class="row">
           <!--<div class="col-12 col-lg-2 text-center d-flex justify-content-center align-content-center align-items-center">
-                <h5>Presented by</h5>
-              </div>-->
+            <h5>Presented by</h5>
+          </div>-->
           <div class="col-12 col-lg-12">
             <div class="owl-carousel">
               <div><img src="./images/chevron.png" class="icon-footer" /></div>
