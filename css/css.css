@@ -185,6 +185,10 @@ body.bg_schedule {
   font-size: 1rem;
   border-radius: 5px;
 }
+.btn-login-modal.active{
+  background-color: #7e080c;
+  text-decoration: underline;
+}
 .select-sex-age {
   background-image: url("../images/select-arrow.png");
   background-repeat: no-repeat;
