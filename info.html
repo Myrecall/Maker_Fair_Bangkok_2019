@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Maker Fair Bangkok 2019</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="./node_modules/mdbootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link href="./node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet" />
+    <!--Google Fonts Kanit-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!--OWL-->
+    <link
+      rel="stylesheet"
+      href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
+    />
+    <!-- Your custom styles (optional) -->
+    <link href="./css/css.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg_schedule">
+    <div class="header-schedule">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="contain-logo-index">
+              <div class="row m-0">
+                <div class="col-12 col-md-6 text-center text-md-left">
+                  <div class="header-logo-index">
+                    <a href="index.html">
+                      <img
+                        src="./images/img-logo.png"
+                        class="img-logo wow fadeInLeft"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end"
+                >
+                  <!--เข้าสู่ระบบแล้ว-->
+                  <!--<div class="btn-group">                
+                                <button
+                                  class="btn btn-login dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  <i class="fas fa-user-alt mr-2"></i> Anucha
+                                </button>
+                
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                                  <a class="dropdown-item" href="#">เผื่อมี</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                                </div>
+                              </div>-->
+                  <!--เข้าสู่ระบบแล้ว-->
+                  <button
+                    class="btn btn-login d-inline-flex wow fadeInRight"
+                    data-toggle="modal"
+                    data-target="#loginModal"
+                  >
+                    <i class="fas fa-user-alt mr-2"></i> เข้าสู่ระบบ
+                  </button>
+                  <div class="div-lang d-inline-flex wow fadeInRight">
+                    <select class="select-lang">
+                      <option selected value="1">TH</option>
+                      <option value="2">EN</option>
+                    </select>
+                  </div>
+                  <button
+                    class="navbar-toggler d-block d-lg-none"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#menu_mobile"
+                    aria-controls="menu_mobile"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon icon-hamberger"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="collapse navbar-collapse custom-nav-collapse"
+                  id="menu_mobile"
+                >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >ข้อมูลจัดงาน</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#">ข้อมูลงาน</a>
+                        <a class="dropdown-item" href="#">เวทีหลัก</a>
+                        <a class="dropdown-item" href="#">ลานกิจกรรม</a>
+                        <a class="dropdown-item" href="#">ข่าวสาร</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >เวิร์คช็อป</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#"
+                          >ตารางและข้อมูลกิจกรรม</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Link สมัครร่วมเวิร์คช็อป</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">แบบสอบถาม</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Young Maker Contest Year 3</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >ติดต่อเรา</a
+                      >
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#">แผนที่การเดินทาง</a>
+                        <a class="dropdown-item" href="#">การจอดรถ</a>
+                        <a class="dropdown-item" href="#">ติดต่อเรา</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="myHeader" class="d-none d-lg-block">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
+          <div class="row justify-content-between w-100 m-0 p-0">
+            <div
+              class="col text-center d-flex align-content-center justify-content-center align-items-center linknav"
+            >
+              <a
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >ข้อมูลจัดงาน <i class="fas fa-caret-down ml-2"></i
+              ></a>
+              <div class="dropdown-menu dropdown-mfb">
+                <a class="dropdown-item" href="#!">ข้อมูลงาน</a>
+                <a class="dropdown-item" href="#!">เวทีหลัก</a>
+                <a class="dropdown-item" href="#!">ลานกิจกรรม</a>
+                <a class="dropdown-item" href="#!">ข่าวสาร</a>
+              </div>
+            </div>
+            <div
+              class="col text-center d-flex align-content-center justify-content-center align-items-center linknav"
+            >
+              <a
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >เวิร์คช็อป <i class="fas fa-caret-down ml-2"></i
+              ></a>
+              <div class="dropdown-menu dropdown-mfb">
+                <a class="dropdown-item" href="#!">ตารางและข้อมูลกิจกรรม</a>
+                <a class="dropdown-item" href="#!">Link สมัครร่วมเวิร์คช็อป</a>
+              </div>
+            </div>
+            <a
+              href="#!"
+              class="col text-center d-flex align-content-center justify-content-center align-items-center linknav"
+              >แบบสอบถาม</a
+            >
+            <a
+              href="#!"
+              class="col text-center d-flex align-content-center justify-content-center align-items-center linknav"
+              >Young Maker<br />Contest Year 3</a
+            >
+            <div
+              class="col text-center d-flex align-content-center justify-content-center align-items-center linknav"
+            >
+              <a
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >ติดต่อเรา <i class="fas fa-caret-down ml-2"></i
+              ></a>
+              <div class="dropdown-menu dropdown-mfb">
+                <a class="dropdown-item" href="#!">แผนที่การเดินทาง</a>
+                <a class="dropdown-item" href="#!">การจอดรถ</a>
+                <a class="dropdown-item" href="#!">ติดต่อเรา</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--/.Navbar-->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-mfb wow fadeInLeft">
+                <li class="breadcrumb-item">ข้อมูลจัดงาน</li>
+                <li class="breadcrumb-item active">ข้อมูลงาน</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-12 py-3 text-center">
+            <h4 class="white-text wow fadeIn">
+              ข้อมูลเกี่ยวกับ “Maker Faire” และ “เมกเกอร์
+            </h4>
+          </div>
+          <div class="col-12 py-3 text-center">
+            <img src="./images/img_info.jpg" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body pr-md-5">
+                <h5 class="text-center">เกี่ยวกับงาน “Maker Faire Bangkok”</h5>
+                <ul>
+                  <li class="my-3 text-justify">
+                    โครงการ “Chevron Enjoy Science: สนุกวิทย์ พลังคิด
+                    เพื่ออนาคต” โดยบริษัท เชฟรอนประเทศไทยสำรวจและผลิต จำกัด
+                    ได้ร่วมกับกระทรวงวิทยาศาสตร์และเทคโนโลยี โดย
+                    สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)
+                    และกลุ่มเมกเกอร์ในประเทศไทย จัดงาน Bangkok Mini Maker Faire
+                    ปี 1 และ ปี 2 ขึ้น
+                    เพื่อเป็นเวทีให้เมกเกอร์ในประเทศไทยได้มีพื้นที่แสดงผลงาน
+                    ตลอดจนส่งเสริมความสนใจในวัฒนธรรมเมกเกอร์ไปยังเยาวชนคนรุ่นใหม่และบุคคลทั่วไป
+                    โดยได้รับความสำเร็จเป็นอย่างดี มีผู้เข้าร่วมงานกว่า 4,000
+                    และ 5,000 คน ตามลำดับ
+                  </li>
+                  <li class="my-3 text-justify">
+                    จากนั้นจึงมีการต่อยอดขึ้นมาเป็น Maker Faire Bangkok 2018:
+                    ลานอวดของ ประลองไอเดีย
+                    งานมหกรรมแสดงผลงานสิ่งประดิษฐ์ของเหล่าเมกเกอร์ทั้งไทยและต่างประเทศที่ยิ่งใหญ่ที่สุดในเอเชียตะวันออกเฉียงใต้
+                    และเป็นงานเมกเกอร์แฟร์งานแรกของโลกที่จัดขึ้นในปี 2018
+                    โดยมีจำนวนผู้มาร่วมงานกว่า 10,000 คน
+                    ซึ่งในจำนวนนี้มีผู้ที่มาร่วมงานครั้งแรกถึงร้อยละ 77
+                    ถือเป็นความสำเร็จครั้งยิ่งใหญ่ของวงการเมกเกอร์ในประเทศไทย
+                  </li>
+                  <li class="my-3 text-justify">
+                    งาน Maker Faire Bangkok 2019
+                    จัดแสดงผลงานนวัตกรรมและสิ่งประดิษฐ์ใหม่ๆ
+                    ของเหล่าเมกเกอร์จากทั่วประเทศไทยและทั่วโลก ในหลากหลายสาขา
+                    กว่า 70 บูธ ชิ้น อาทิ สิ่งประดิษฐ์ฝีมือเมกเกอร์สาวๆ
+                    ผลงานศิลปะหลากหลายสไตล์เมกเกอร์ วาไรตี้หุ่นยนต์
+                    มหกรรมรถไฟฟ้าสร้างเองได้
+                    ตลอดจนถึงขบวนพาเหรดแสงไฟไปที่ทุกคนตั้งตารอ
+                    รวมถึงกิจกรรมเวิร์กชอปอีกมากมายและโอกาสในการพบปะพูดคุยเพื่อแลกเปลี่ยนประสบการณ์กับเหล่าเมกเกอร์ที่จะทำให้ผู้ร่วมงานทุกท่านได้สัมผัสถึงแก่นแท้ของวัฒนธรรมเมกเกอร์
+                    พร้อมจุดประกายการเรียนรู้ที่จะเป็นเมกเกอร์อย่างเต็มตัวเพื่อสร้างสรรค์ผลงานตามสไตล์ของตัวเองในอนาคต
+                  </li>
+                  <li class="my-3 text-justify">
+                    ในระหว่างปี ได้มีการเปิดรับสมัครผลงานจากเมกเกอร์ทั่วประเทศ
+                    เพื่อนำมาจัดแสดงในงาน Maker Faire Bangkok 2019
+                    โดยไม่จำกัดสาขา ไม่ว่าจะเป็นไฟฟ้าและอิเล็กทรอนิกส์
+                    ระบบสมองกลฝังตัว ดนตรี อาหาร ศิลปะ งานไม้ งานโลหะ งานผ้า
+                    และอื่นๆ ทั้งนี้คณะกรรมการผู้คัดเลือกผลงาน
+                    ประกอบด้วยผู้เชี่ยวชาญจาก สวทช. และกลุ่มเมกเกอร์
+                    ซึ่งเมกเกอร์ที่ได้รับการคัดเลือกจะได้จัดแสดงผลงาน
+                    และได้รับสิทธิ์ในการเข้าร่วมกิจกรรมต่างๆ อาทิ
+                    การสาธิตผลงานบนเวทีกลางและลานกิจกรรม เข้าร่วมกิจกรรมเสวนา
+                    เป็นต้น
+                  </li>
+                  <li class="my-3 text-justify">
+                    ในอนาคต ผู้จัดงาน Maker Faire Bangkok
+                    มุ่งพัฒนาสังคมเมกเกอร์และผลักดันประเทศไทยสู่การเป็นศูนย์กลางเมกเกอร์ในภูมิภาคอาเซียน
+                    เพื่อให้วัฒนธรรมเมกเกอร์แพร่หลายในวงกว้าง
+                    และผลักดันประเทศไทยสู่ระบบเศรษฐกิจที่ขับเคลื่อนด้วยนวัตกรรมและเทคโนโลยีตามยุทธศาสตร์ประเทศไทย
+                    4.0 อย่างแท้จริง
+                  </li>
+                </ul>
+                <p class="">
+                  <i
+                    >มหกรรม Maker Faire Bangkok บริหารและจัดการโดยอิสระ
+                    ภายใต้ลิขสิทธิ์ของ Maker Media, Inc.</i
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body pr-md-5">
+                <h5 class="text-center">เกี่ยวกับ “เมกเกอร์” </h5>
+                <ul>
+                  <li class="my-3 text-justify"><b>เมกเกอร์ (Maker)</b> คือผู้ที่ชอบสร้างสรรค์หรือดัดแปลงสิ่งต่างๆ เพื่อใช้ในชีวิตประจำวัน มีรากฐานมาจากวัฒนธรรม DIY  (Do It Yourself)  เมกเกอร์จึงไม่ได้จำกัดอยู่แค่วิศวกรหรือผู้ที่มีความรู้ในเทคโนโลยีชั้นสูงเท่านั้น งานประดิษฐ์ในขบวนการเมกเกอร์จึงมีหลากหลายตั้งแต่งานไฮเทค เช่น เครื่องพิมพ์สามมิติ กล้องโดรน ไปจนถึงงานที่ใช้พลาสติก อิเล็กทรอนิกส์ หรือโลหะ รวมถึงผ้า กระดาษ เซรามิกส์ ไม้ หรือแม้แต่อาหาร ต่างก็รวมอยู่ด้วยทั้งสิ้น ขอเพียงแค่ให้มีความแปลกใหม่และการสร้างสรรค์ไอเดียต่างๆ</li>
+                  <li class="my-3 text-justify">ความก้าวหน้าทางเทคโนโลยีเพิ่มมากขึ้นประกอบกับการเข้าถึงเทคโนโลยีต่างๆ ทำได้ง่ายขึ้น อาทิ โปรแกรมโอเพ่นซอร์ส ที่ใครๆ ก็สามารถใช้ได้ฟรี กล้องโดรน หรือเครื่องพิมพ์สามมิติที่มีราคาถูกลง จึงเกิดการนำเทคโนโลยีเหล่านี้มาใช้เพื่อสร้างสรรค์หรือประกอบสิ่งประดิษฐ์กันอย่างแพร่หลาย ทำให้รูปแบบของงานประดิษฐ์มีความหลากหลายยิ่งขึ้น นอกจากนั้นด้วยอินเทอร์เน็ตทำให้ผู้ที่มีความสนใจในการประดิษฐ์สามารถค้นหาและรวมตัวกันได้ง่ายขึ้น เกิดการทำกิจกรรมร่วมกันและแลกเปลี่ยนความคิดเห็น</li>
+                  <li class="my-3 text-justify"><b>วัฒนธรรมทำเอง (Maker Culture)</b> มีจุดเด่นคือความเป็นสังคมแห่งการแบ่งปันความรู้และการร่วมมือกัน การเกิดขึ้นของ “เมกเกอร์สเปซ” (Maker Space) หรือพื้นที่ทำงานร่วมกันของเมกเกอร์ ที่ให้บริการอุปกรณ์ต่างๆ โดยคิดค่าบริการไม่แพง ตลอดจนการจัดงานต่างๆ เพื่อให้เมกเกอร์ได้มาพบปะกัน อาทิ งาน Maker Faire ได้มีส่วนช่วยส่งเสริมวัฒนธรรมแห่งการแบ่งปันนี้ ส่งผลให้สังคมของเมกเกอร์เติบโตขึ้นอย่างรวดเร็ว</li>
+                  <li class="my-3 text-justify"><b>งานเมกเกอร์แฟร์ (Maker Faire)</b> หรือมหกรรมแสดงผลงานสิ่งประดิษฐ์ของเหล่าเมกเกอร์ จัดเป็นครั้งแรกที่ซานมาเทโอ มลรัฐแคลิฟอร์เนีย สหรัฐอเมริกา ในปี 2008 ก่อนที่จะได้รับความนิยมและขยายตัวไปทั่วโลก และในภายหลังยังมีการจัดงาน Mini Maker Faire อีกด้วย</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!--<div class="col-12 col-lg-2 text-center d-flex justify-content-center align-content-center align-items-center">
+            <h5>Presented by</h5>
+          </div>-->
+          <div class="col-12 col-lg-12">
+            <div class="owl-carousel">
+              <div><img src="./images/chevron.png" class="icon-footer" /></div>
+              <div><img src="./images/enjoy.png" class="icon-footer" /></div>
+              <div><img src="./images/nstda.png" class="icon-footer" /></div>
+              <div><img src="./images/nsm.png" class="icon-footer" /></div>
+              <div>
+                <img src="./images/footer_logo.png" class="icon-footer" />
+              </div>
+              <div><img src="./images/kenan.png" class="icon-footer" /></div>
+              <div><img src="./images/makezine.png" class="icon-footer" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal Login-->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background-color: transparent;">
+          <div class="modal-body bg-modal-login">
+            <div class="row">
+              <div
+                class="col-12 col-lg-6 d-flex align-content-center align-self-center justify-content-center py-2"
+              >
+                <div class="row">
+                  <div class="col-12 mb-3 text-center">
+                    <h5 class="text-white">เข้าสู่ระบบ</h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อีเมล"
+                        aria-label="อีเมล"
+                        aria-describedby="email-login"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="email-login"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="รหัสผ่าน"
+                        aria-label="รหัสผ่าน"
+                        aria-describedby="pass-login"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-login"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#!"> <p class="p-forgotpass">ลืมรหัสผ่าน</p> </a>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-login-modal btn-block">
+                      เข้าสู่ระบบ
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-6 d-flex align-content-center align-self-center justify-content-center py-2 modal-login-right"
+              >
+                <div class="row">
+                  <div class="col-12 mb-3 text-center">
+                    <h5 class="text-white">สมัครสมาชิก</h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="ชื่อ นามสกุล"
+                        aria-label="ชื่อ นามสกุล"
+                        aria-describedby="fullname-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="fullname-reg"
+                          ><i class="fas fa-user"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อีเมล"
+                        aria-label="อีเมล"
+                        aria-describedby="email-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="email-reg"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="รหัสผ่าน"
+                        aria-label="รหัสผ่าน"
+                        aria-describedby="pass-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="ยืนยันรหัสผ่าน"
+                        aria-label="ยืนยันรหัสผ่าน"
+                        aria-describedby="pass-reg2"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg2"
+                          ><i class="fas fa-key"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <select class="form-control select-sex-age">
+                      <option selected disabled>เพศ</option>
+                      <option value="1">ชาย</option>
+                      <option value="2">หญิง</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="อายุ"
+                        aria-label="อายุ"
+                        aria-describedby="pass-reg2"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg2"
+                          ><i class="far fa-calendar-check"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ1"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ1"
+                        >นักเรียน</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ2"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ2"
+                        >นักศึกษา</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ3"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ3"
+                        >ข้าราชการ/รัฐวิสาหกิจ</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ4"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ4"
+                        >ธุรกิจส่วนตัว</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ5"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ5"
+                        >พนักงานบริษัท</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="custom-control custom-radio mb-2">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="occ6"
+                        name="occupation"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="occ6"
+                        >อื่นๆ</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <input class="form-control-sm form-control mb-2" />
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input-reg"
+                        placeholder="เบอร์โทรศัพท์"
+                        aria-label="เบอร์โทรศัพท์"
+                        aria-describedby="pass-reg"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text custom-input-icon-reg"
+                          id="pass-reg"
+                          ><i class="fas fa-mobile-alt"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="custom-control custom-radio mb-1">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="acc-pic1"
+                        name="accpect-pic"
+                      />
+                      <label
+                        class="custom-control-label custom-mfb-radio white-text"
+                        for="acc-pic1"
+                        >ยินยอมให้สิทธิเผยแพร่ภาพ(Modal Release)</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mb-4 text-center">
+                    <a
+                      class="white-text readmore ml-auto"
+                      data-toggle="collapse"
+                      href="#readmore"
+                      aria-expanded="false"
+                      aria-controls="readmore"
+                      >อ่านเพิ่ม</a
+                    >
+                    <div class="collapse" id="readmore">
+                      <div class="mt-3">
+                        <p class="mb-0 white-text">
+                          *หมายเหตุ การลงทะเบียนชื่อในใบลงทะเบียนนี้
+                          หมายถึงการยินยอมหรืออนุญาตให้บริษัท
+                          เชฟรอนประเทศไทยสำรวจและผลิต จำกัด สามารถนำชื่อ เสียง
+                          ภาพเหมือน รูปภาพ วีดีโอ
+                          ภาพยนต์หรือภาพถ่ายของคุณไปใช้สำหรับกิจกรรมเพื่อการโฆษณาต่างๆ
+                          คุณสามารถขอทราบรายละเอียดเพิ่มเติมจากเจ้าหน้าที่ได้
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-login-modal btn-block">
+                      สมัครสมาชิก
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Modal Login-->
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./node_modules/mdbootstrap/js/mdb.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/owl.carousel/dist/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/carousel-footer.js"></script>
+    <script type="text/javascript" src="./js/sticky-nav.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
