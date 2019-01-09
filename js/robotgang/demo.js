@@ -379,6 +379,7 @@
 					// Set the main content wrapper to absolute so it´s position at the top.
 					contentEl.DOM.el.parentNode.style.position = 'absolute';
 					contentEl.DOM.el.parentNode.style.top = '-12rem';
+					contentEl.DOM.el.parentNode.style.backgroundColor = '#f1f1f1';
 					// Hiding the grid scroll.
 					this.DOM.gridWrap.classList.add('grid-wrap--hidden');
 					// Scroll up the page.
